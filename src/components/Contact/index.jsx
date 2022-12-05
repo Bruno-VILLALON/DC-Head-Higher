@@ -11,7 +11,7 @@ const Contact = () => {
                 data-netlify-recaptcha='true'
                 onSubmit='submit'
                 >
-                <input type='hidden' name='form-contact' value='contact' />
+                <input type='hidden' name='form-name' value='contact' />
                 <input type="text" name='name' placeholder="Prénom, Nom" required />
                 <input type="email" name='email' placeholder="E-mail" required />
                 <textarea name="message" placeholder="Ton message ......"></textarea>
