@@ -1,0 +1,35 @@
+@use 'src/styles/vars';
+
+#staff {
+    width:99vw;
+    min-height:100vh;
+    box-sizing: border-box;
+    font-family: vars.$font-standard;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px ;
+    background-color: vars.$dark-color;
+
+    & h2 {
+        color: vars.$light-color;
+        font-family: vars.$font-title;
+        font-size: calc(1.5rem + 2vw);
+        letter-spacing: 0.5vw;
+    }
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    &-duo {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}

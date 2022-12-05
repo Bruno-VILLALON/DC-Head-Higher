@@ -1,0 +1,62 @@
+@use 'src/styles/vars';
+
+.member {
+    background-color: vars.$dark-color;
+    width:250px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    position: relative;
+
+    &:hover{
+        border: 1px solid vars.$contrast-color;
+        box-shadow: 2px 2px 12px rgba(184, 0, 0, 0.445);
+    }
+
+    &-image {
+        width: 100%;
+        height: 60%;
+
+        & img {
+           padding: 15px;
+            margin-top: 40px;
+            width:100%;
+            height: 100%;
+            border-radius: 50%; 
+        }
+    }
+
+    &-text {
+        width: 100%;
+        height: 40%;
+        background-color:vars.$dark-color;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+        &-name {
+            font-size: 2rem;
+            color: vars.$light-color;
+        }
+
+        &-detail {
+            margin: 0px;
+            color:vars.$medium-color;
+            font-size: 1.1rem;
+            font-family:'Lato';
+            display: block;
+            display: -webkit-box;
+            max-width: 80%;
+            margin-top: 5px;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 10px;
+        }
+    }
+}

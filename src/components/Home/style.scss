@@ -1,0 +1,49 @@
+@use 'src/styles/vars';
+
+.home {
+    width:99vw;
+    height:56vw;
+    min-height: 750px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/images/Plelan2021.jpg');
+    background-position: center;
+    z-index: 0;
+
+    &-title {
+    text-align: center;
+	font-family: vars.$font-standard;
+    text-shadow: vars.$dark-color 1vw 1vw 1vw;
+	width: 80vw;
+	position: absolute;
+    left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+        & span {
+            color: vars.$contrast-color;
+        }
+
+        & h2 {
+	        font-family: vars.$font-title;
+	        font-size: calc(1.5rem + 2vw);
+	        margin:0px;
+	        letter-spacing: 0.5vw;
+	        color: vars.$light-color;
+        }
+
+        & h1 {
+	        font-family: vars.$font-title;
+	        font-size: calc(2rem + 3vw);
+	        margin:0px;
+	        letter-spacing: 0.5vw;
+	        color: vars.$light-color;
+        }
+    }
+
+    &-details {
+        font-size: calc(1rem + 1vw);
+        color: vars.$medium-color;
+    }
+}

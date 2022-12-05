@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+
+.footer {
+    color: vars.$medium-color;
+    width: 700px;
+    margin: 20px auto;
+    
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & li {
+            min-width: 200px;
+            text-align: center;
+
+            & a {
+                text-decoration: none;
+                color: vars.$medium-color;
+            }
+        }
+    }
+}
+
+@media(max-width:1100px){
+    .footer {
+        width: 100vw;
+        
+    
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+    }
+}

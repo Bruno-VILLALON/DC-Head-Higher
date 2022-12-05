@@ -1,0 +1,63 @@
+@use 'src/styles/vars';
+
+
+.listen {
+    padding-top: 30px;
+    width:99vw;
+    height:120vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/images/vinyle.webp);
+    text-align: center;
+
+    &-title {
+        text-align: center;
+	    font-family: vars.$font-title;
+        color: vars.$light-color;
+        text-shadow: vars.$dark-color 1vw 1vw 1vw;
+        font-size: calc(1rem + 1vw);
+        letter-spacing: 0.5vw;
+	    width: 80vw;
+	    position: absolute;
+        left: 50%;
+	    top: 5%;
+	    transform: translate(-50%,-5%);
+
+        & span{
+            color: vars.$contrast-color;
+        }
+    }
+
+    &-players {
+        display: flex;
+        flex-direction: column;
+
+        &-video {
+            width: calc(200px + 20vw);
+            height: calc(100px + 20vh);
+            position: absolute;
+            left: 50%;
+            top: 10vh;
+            transform: translate(-50%, 10vh);
+        }
+        
+        &-audio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80vw;
+            height: 20vw;
+            position: absolute;
+            left: 50%;
+            top: 30vh;
+            transform: translate(-50%, 30vh);
+
+            &-individual {
+                padding: 1vw;
+            }
+        }
+    }
+}
+
