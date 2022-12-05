@@ -6,9 +6,9 @@ const Contact = () => {
             <h2>CONTACTE NOUS</h2>
             <form
                 name='contact'
-                method='post'
-                className='contact__form'
+                method='POST'
                 data-netlify='true'
+                data-netlify-recaptcha='true'
                 onSubmit='submit'
                 >
                 <input type='hidden' name='form-contact' value='contact' />
