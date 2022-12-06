@@ -1,6 +1,7 @@
 # DC Head Higher
 
-This is the landing page of my band
+This is the landing page of my rock band
+Deployed with Netlify [https://dc-head-higher.netlify.app/](https://dc-head-higher.netlify.app/)
 
 ## Features
 
@@ -16,6 +17,7 @@ This is the landing page of my band
 - [sass](https://sass-lang.com/)
 - [react-player](https://github.com/cookpete/react-player)
 - [react-scroll](https://github.com/fisshy/react-scroll)
+- [netlify-forms](https://docs.netlify.com/forms/setup/)
 
 ## How to install this app ?
 
